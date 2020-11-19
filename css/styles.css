@@ -1,0 +1,406 @@
+
+* {
+box-sizing: border-box;
+}
+
+body {
+  /* background: #f5f5f5; */
+  background: #fff5ea;
+  font-family: 'Lato', sans-serif;
+  color: #E25450;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header styles */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 1.5em;
+  align-items: center;
+}
+
+h2,
+.name {
+  background-color: #E25450;
+  background-image: linear-gradient( #E25450, #FFB5A7);
+  background-size: 100%;
+  background-clip: text;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.name {
+  font-size: 2.5em;
+  max-width: 5em;
+}
+
+.main-nav {
+  text-align: right;
+}
+
+.header #nav-links {
+  display: none;
+}
+
+#nav-links {
+  font-size: 10px;
+  z-index: 1;
+  position: absolute;
+  right: 0%;
+  top: 10%;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation li {
+  padding: 1.5em 2.2em 0 0;
+}
+
+.navigation a {
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #E25450;
+  margin: 0;
+}
+
+.navigation li:hover {
+  color: #FFB5A7;
+}
+
+.hamburger {
+  max-width: 28%;
+}
+
+/* About styles */
+
+.hey,
+.i-am,
+.nice {
+  margin-left: 1em;
+  font-size: 1.1em;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/* #emoji {
+  max-width: 12%;
+} */
+
+.face {
+  width: 48%;
+  height: 48%;
+  max-width: 13em;
+  float: right;
+  margin: 4em 2.5em 1em -1em;
+}
+
+.hey {
+  padding-top: 10em;
+}
+
+.i-am {
+  padding-top: 2em;
+  margin: 0 1.5em 0 1.5em;
+}
+
+.nice {
+  padding-top: 1.5em;
+  margin: 0 1.5em 4em 2.5em;
+}
+
+/* Portfolio styles */
+
+.portfolio {
+  margin: 2em 1.5em 4em 1.5em;
+}
+
+.card {
+ margin-bottom: 2em;
+ position: relative;
+}
+
+.gallery {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+.overlay-melon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFB5A7;
+}
+
+.overlay-yellow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f4c78c;
+}
+
+.overlay-blue {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #C4E7E8;
+}
+
+.overlay p {
+  color: #E25450
+}
+
+.card:hover .overlay-melon,
+.card:hover .overlay-yellow,
+.card:hover .overlay-blue {
+  opacity: 0.8;
+}
+
+/* Footer styles */
+
+.footer {
+  margin: 1em 1em 0 1em;
+  font-size: .8em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.email-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.envelope {
+  fill: #E25450;
+  height: 10%;
+  width: 10%;
+  margin-right: 0.5em;
+}
+
+.email-address {
+  color: #E25450;
+  font-size: 1.3em;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2.5em 0 3em 0;
+  padding: 0;
+}
+
+.social-list a {
+  padding: 1.5em;
+}
+
+.footer-svg {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.copyright {
+  text-align: right;
+  font-size: 0.8em;
+}
+
+/* @media (min-width: 576px) {
+
+  .face {
+    margin-right: 4em;
+  }
+
+  .hey {
+    padding-top: 12em;
+    margin-left: 4em; 
+  }
+
+
+} */
+
+@media (min-width: 768px) {
+  
+  .name {
+    font-size: 3em;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header #nav-links {
+    display: block;
+    position: static;
+  }
+
+  .navigation {
+    flex-direction: row;
+    padding-bottom: 5px;
+  }
+
+  .navigation li {
+    padding: 0;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 0 0 0 1.5em;
+    font-size: 1.8em;
+  }
+
+  .navigation a:hover {
+    color: #FFB5A7;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .face {
+    max-width: 40%;
+    margin: 5em 6em 0 0;
+    padding-left: 3em;
+  }
+
+  .about-text {
+    margin-left: 0.5em;
+    font-size: 1.3em;
+  }
+
+  .i-am {
+    margin-left: 2em;
+  }
+
+  .nice {
+    margin: 3em 0 5em 5em;
+  }
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-column-gap: 2em;
+    margin-top: 2em;
+  }
+
+  .footer {
+    font-size: 1em;
+  }
+
+  .envelope {
+    height: 7%;
+    width: 7%;
+  }
+
+  .email-address {
+    margin-bottom: 0.3em;
+  }
+
+}
+
+
+@media (min-width: 1040px) {
+
+  .name {
+    font-size: 4em;
+  }
+
+  .navigation a {
+    font-size: 2em;
+    padding: 0 0 0 2em;
+  }
+
+  .face {
+    max-width: 26%;
+    margin: 2em 12em 0 0;
+    padding-left: 5em;
+  }
+
+  .hey {
+    padding-top: 3em;
+    margin-left: 5em;
+  }
+
+  /* .i-am {
+
+  } */
+
+  .nice {
+    margin-bottom: -1em;
+  }
+
+  .about-text {
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 1.3;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.6px;
+    -webkit-text-stroke-color: #E25450;
+    font-style: italic;
+  } 
+
+  .about-text p {
+    margin-bottom: 2em;
+  }
+
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-column-gap: 4em;
+    grid-row-gap: 2em;
+    margin: 0 2em;
+  }
+
+}
