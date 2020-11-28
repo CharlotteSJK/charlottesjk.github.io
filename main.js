@@ -33,11 +33,46 @@ face.addEventListener('mouseout', e => {
   }
 })
 
-console.log(plus);
+// console.log(plus);
 
 plus.addEventListener('click', e => {
   if (blurb.style.display = "none") {
+    plus.innerHTML = "-";
     blurb.style.display = "block";
-  } else if (blurb.style.display = "block") {
+  } else {
     blurb.style.display = "none";
+    plus.innerHTML = "+";
 }})
+
+document.querySelectorAll('.plus').forEach(item => {
+  item.addEventListener('click', event => {
+    //handle click
+  })
+})
+
+// plus.forEach();
+
+// if (time < 10) {
+//   greeting = "Good morning";
+// } else if (time < 20) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+
+
+
+
+// search.addEventListener('keyup', () => {
+//   const searchTerm = search.value.toLowerCase();
+//   const employeeNames = document.querySelectorAll('.name');
+//   employeeNames.forEach(employeeName => {
+//     const text = employeeName.textContent.toLowerCase();
+//     const box = employeeName.parentElement.parentElement;
+//     if(text.indexOf(searchTerm) > -1) {
+//       box.style.display = "flex";
+//     } else {
+//       box.style.display = "none";  
+//     }
+// 	})
+// });
