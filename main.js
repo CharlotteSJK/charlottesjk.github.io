@@ -16,10 +16,10 @@ hamburger.addEventListener('click', e => {
   }
 })
 
-document.addEventListener('click', e => {
-    if (e.target != hamburger)
-    navLinks.style.display = "none";
-})
+// document.addEventListener('click', e => {
+//     if (e.target != hamburger)
+//     navLinks.style.display = "none";
+// })
 
 //Makes the colors change on the profile image on hover
 
