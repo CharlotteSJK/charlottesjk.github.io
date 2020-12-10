@@ -4,9 +4,9 @@ const navMenu = document.querySelector('.navigation');
 const face = document.querySelector('.face');
 const profile = document.querySelector('#profile');
 const pluses = document.querySelectorAll('.plus');
-const blurb = document.querySelector('.card-blurb');
+const blurb = document.querySelectorAll('.card-blurb');
 
-// Toggle between showing and hiding the navigation menu
+// Toggle between showing and hiding the navigation menu when hamburger menu is clicked
 
 hamburger.addEventListener('click', e => {
   if (navLinks.style.display == "block") {
@@ -46,13 +46,24 @@ face.addEventListener('mouseout', e => {
 //     plus.innerHTML = "+";
 // }})
 
-pluses.forEach((plus) => {
+// pluses.forEach((plus) => {
+//   plus.addEventListener("click", (event) => {
+//     if (blurb.style.display == "none") {
+//       plus.innerHTML = "-";
+//       blurb.style.display = "block";
+//     } else {
+//       blurb.style.display = "none";
+//       plus.innerHTML = "+";
+//   }});
+// });
+
+pluses.forEach((plus, index) => {
   plus.addEventListener("click", (event) => {
-    if (blurb.style.display == "none") {
+    if (blurb[index].style.display == "none") {
       plus.innerHTML = "-";
-      blurb.style.display = "block";
+      blurb[index].style.display = "block";
     } else {
-      blurb.style.display = "none";
+      blurb[index].style.display = "none";
       plus.innerHTML = "+";
   }});
 });
