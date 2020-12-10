@@ -1,6 +1,5 @@
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('#nav-links');
-const navMenu = document.querySelector('.navigation');
 const face = document.querySelector('.face');
 const profile = document.querySelector('#profile');
 const pluses = document.querySelectorAll('.plus');
@@ -36,26 +35,6 @@ face.addEventListener('mouseout', e => {
 })
 
 //Shows or hides the description for each project
-
-// plus.addEventListener('click', e => {
-//   if (blurb.style.display == "none") {
-//     plus.innerHTML = "-";
-//     blurb.style.display = "block";
-//   } else {
-//     blurb.style.display = "none";
-//     plus.innerHTML = "+";
-// }})
-
-// pluses.forEach((plus) => {
-//   plus.addEventListener("click", (event) => {
-//     if (blurb.style.display == "none") {
-//       plus.innerHTML = "-";
-//       blurb.style.display = "block";
-//     } else {
-//       blurb.style.display = "none";
-//       plus.innerHTML = "+";
-//   }});
-// });
 
 pluses.forEach((plus, index) => {
   plus.addEventListener("click", (event) => {
